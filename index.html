@@ -111,8 +111,8 @@
     <script>
 
       var disqus_config = function () {
-      this.page.url = "https://troyanovsky.github.io/test-ground/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "test-ground"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "https://troyanovsky.github.io/test-ground/";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "test-ground"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       };
 
       (function () { // DON'T EDIT BELOW THIS LINE
@@ -124,7 +124,17 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
         Disqus.</a></noscript>
+  </section>
+  <section class="hero is-large">
+    <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js">
+      import commentBox from 'commentbox.io';
+      // or
+      const commentBox = require('commentbox.io');
+      // or if using the CDN, it will be available as a global "commentBox" variable.
 
+      commentBox('5763369957064704-proj');
+      </script>
+      <div class="commentbox"></div>
   </section>
 
 
