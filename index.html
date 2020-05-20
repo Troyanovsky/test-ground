@@ -101,11 +101,13 @@
             methods: {
                 generateIpsum: function () {
                     if (this.generatorName == "loremIpsum") {
-                        var apiURL = "http://loripsum.net/api/plaintext/" + this.paragraphNumber.toString() + "/" + this.paragraphLength;
+                        var apiURL = "https://cors-anywhere.herokuapp.com/https://loripsum.net/api/plaintext/" + this.paragraphNumber.toString() + "/" + this.paragraphLength;
                     } else if (this.generatorName == "litIpsum") {
                         var apiURL = "https://litipsum.com/api/" + this.paragraphNumber.toString();
                     } else if (this.generatorName == "baconIpsum") {
                         var apiURL = "https://baconipsum.com/api/?type=meat-and-filler&paras=" + this.paragraphNumber.toString() + "&start-with-lorem=1&format=text";
+                    } else if (this.generatorName == "ramenIpsum") {
+                        var apiUR = "https://cors-anywhere.herokuapp.com/http://ramenipsum.herokuapp.com/paragraphs/" + this.paragraphNumber.toString()
                     }
                     const _this = this;
                     let xhr = new XMLHttpRequest();
